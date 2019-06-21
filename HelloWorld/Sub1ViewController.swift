@@ -14,7 +14,7 @@ class Sub1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     let TODO = ["HOGE", "FUGA"]
     
-    var posts: Posts? = nil
+    var posts: QiitaPostsFetchOutputData? = nil
     
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     @IBOutlet weak var indicatorContainerView: UIView!
@@ -50,6 +50,10 @@ class Sub1ViewController: UIViewController, UITableViewDelegate, UITableViewData
         // ここに通信処理などデータフェッチの処理を書く
         // データフェッチが終わったらUIRefreshControl.endRefreshing()を呼ぶ必要がある
     }
+    
+    func setPosts(outputs: QiitaPostsFetchOutputData) {
+        posts = outputs
+    }
 
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         print("will begin dragging")
@@ -70,8 +74,8 @@ class Sub1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let service = SampleService()
-        self.posts = service.fetchQiitaPosts()
+        let usecase = QiitaPostsFetchInteractor(presenter: Sub1Presenter(viewModel: self), repository: SampleService())
+        usecase.handler()
         
 
         (myTableView)?.viewController = self

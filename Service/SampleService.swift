@@ -9,7 +9,7 @@
 import Foundation
 import Domain
 
-public class SampleService {
+public class SampleService : SampleRepository {
     public init() {
         
     }

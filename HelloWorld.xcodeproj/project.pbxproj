@@ -25,6 +25,11 @@
 		05EDA7CB22BCEB5800C412AE /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EDA7C422BCEB5800C412AE /* Service.framework */; };
 		05EDA7CC22BCEB5800C412AE /* Service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05EDA7C422BCEB5800C412AE /* Service.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05EDA7D322BCEEAF00C412AE /* SampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7D222BCEEAF00C412AE /* SampleService.swift */; };
+		05EDA7D522BD10CB00C412AE /* QiitaPostsFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7D422BD10CB00C412AE /* QiitaPostsFetchUseCase.swift */; };
+		05EDA7D722BD11B600C412AE /* SampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7D622BD11B600C412AE /* SampleRepository.swift */; };
+		05EDA7D922BD121E00C412AE /* Sub1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7D822BD121E00C412AE /* Sub1Presenter.swift */; };
+		05EDA7DB22BD129B00C412AE /* QiitaPostsFetchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7DA22BD129B00C412AE /* QiitaPostsFetchPresenter.swift */; };
+		05EDA7DD22BD12E500C412AE /* QiitaPostsFetchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7DC22BD12E500C412AE /* QiitaPostsFetchInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,11 @@
 		05EDA7C622BCEB5800C412AE /* Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
 		05EDA7C722BCEB5800C412AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05EDA7D222BCEEAF00C412AE /* SampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleService.swift; sourceTree = "<group>"; };
+		05EDA7D422BD10CB00C412AE /* QiitaPostsFetchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPostsFetchUseCase.swift; sourceTree = "<group>"; };
+		05EDA7D622BD11B600C412AE /* SampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepository.swift; sourceTree = "<group>"; };
+		05EDA7D822BD121E00C412AE /* Sub1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sub1Presenter.swift; sourceTree = "<group>"; };
+		05EDA7DA22BD129B00C412AE /* QiitaPostsFetchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPostsFetchPresenter.swift; sourceTree = "<group>"; };
+		05EDA7DC22BD12E500C412AE /* QiitaPostsFetchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPostsFetchInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +155,7 @@
 				0517901022AA7A730008EE78 /* Sub1ViewController.swift */,
 				0517901222AE2D3D0008EE78 /* MyTableView.swift */,
 				058CD35A22B3A9F800E95F8B /* Sub2ViewController.swift */,
+				05EDA7D822BD121E00C412AE /* Sub1Presenter.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -163,6 +174,10 @@
 				05EDA7B222BCEAF400C412AE /* Domain.h */,
 				05EDA7B322BCEAF400C412AE /* Info.plist */,
 				05EDA7BD22BCEB3A00C412AE /* Posts.swift */,
+				05EDA7D422BD10CB00C412AE /* QiitaPostsFetchUseCase.swift */,
+				05EDA7D622BD11B600C412AE /* SampleRepository.swift */,
+				05EDA7DA22BD129B00C412AE /* QiitaPostsFetchPresenter.swift */,
+				05EDA7DC22BD12E500C412AE /* QiitaPostsFetchInteractor.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -333,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05A176992269D7E500672E24 /* AppDelegate.swift in Sources */,
+				05EDA7D922BD121E00C412AE /* Sub1Presenter.swift in Sources */,
 				0517901122AA7A730008EE78 /* Sub1ViewController.swift in Sources */,
 				05BA3E2E22A1366400BE70C5 /* TreePageViewController.swift in Sources */,
 				0517901322AE2D3D0008EE78 /* MyTableView.swift in Sources */,
@@ -344,7 +360,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05EDA7DB22BD129B00C412AE /* QiitaPostsFetchPresenter.swift in Sources */,
+				05EDA7DD22BD12E500C412AE /* QiitaPostsFetchInteractor.swift in Sources */,
 				05EDA7BE22BCEB3A00C412AE /* Posts.swift in Sources */,
+				05EDA7D722BD11B600C412AE /* SampleRepository.swift in Sources */,
+				05EDA7D522BD10CB00C412AE /* QiitaPostsFetchUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
