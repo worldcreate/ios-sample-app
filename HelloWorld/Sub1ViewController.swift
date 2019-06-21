@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Domain
+import Service
 
 class Sub1ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let TODO = ["HOGE", "FUGA"]
+    
+    var posts: Posts? = nil
     
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     @IBOutlet weak var indicatorContainerView: UIView!
@@ -18,14 +22,18 @@ class Sub1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return TODO.count
+        return posts?.posts.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
         
+        guard let post = posts?.posts[indexPath.row] else {
+            return cell
+        }
+
         let label = cell.viewWithTag(10) as! UILabel
-        label.text = TODO[indexPath.row]
+        label.text = post.title
         return cell
     }
     
@@ -61,6 +69,10 @@ class Sub1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let service = SampleService()
+        self.posts = service.fetchQiitaPosts()
+        
 
         (myTableView)?.viewController = self
         
