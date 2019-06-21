@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cuV-RC-pCo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="IW5-JY-peL">
+            <objects>
+                <viewController id="cuV-RC-pCo" customClass="Sub1ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="THI-Mu-252">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJW-4F-n5q" customClass="MyTableView" customModule="HelloWorld" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="rmc-kV-PT4">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rmc-kV-PT4" id="e08-HC-Isa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qC-VF-WCZ">
+                                                    <rect key="frame" x="25" y="11.5" width="364" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0qC-VF-WCZ" firstAttribute="centerY" secondItem="e08-HC-Isa" secondAttribute="centerY" id="PAV-tn-BF1"/>
+                                                <constraint firstItem="0qC-VF-WCZ" firstAttribute="leading" secondItem="e08-HC-Isa" secondAttribute="leadingMargin" constant="5" id="q02-9u-iKk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0qC-VF-WCZ" secondAttribute="trailing" constant="5" id="wVu-mL-lbC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="cuV-RC-pCo" id="1cx-H7-vui"/>
+                                    <outlet property="delegate" destination="cuV-RC-pCo" id="NQ7-kK-DNr"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBc-mx-Isf">
+                                <rect key="frame" x="0.0" y="384" width="414" height="128"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Kim-p5-Yst">
+                                        <rect key="frame" x="187" y="44" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Pdu-fN-r6M"/>
+                                            <constraint firstAttribute="width" constant="40" id="RHY-or-g67"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cxh-2D-fM9"/>
+                                    <constraint firstItem="Kim-p5-Yst" firstAttribute="centerX" secondItem="xBc-mx-Isf" secondAttribute="centerX" id="iaS-jX-7Rz"/>
+                                    <constraint firstItem="Kim-p5-Yst" firstAttribute="centerY" secondItem="xBc-mx-Isf" secondAttribute="centerY" id="pYa-G6-Biw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mJW-4F-n5q" firstAttribute="leading" secondItem="VMH-gf-7Kg" secondAttribute="leading" id="0rr-u6-rYE"/>
+                            <constraint firstItem="VMH-gf-7Kg" firstAttribute="trailing" secondItem="mJW-4F-n5q" secondAttribute="trailing" id="2wH-yh-UuH"/>
+                            <constraint firstItem="VMH-gf-7Kg" firstAttribute="bottom" secondItem="mJW-4F-n5q" secondAttribute="bottom" id="Ky6-8t-oAX"/>
+                            <constraint firstItem="mJW-4F-n5q" firstAttribute="top" secondItem="VMH-gf-7Kg" secondAttribute="top" id="Nsi-cO-LJ0"/>
+                            <constraint firstItem="xBc-mx-Isf" firstAttribute="centerX" secondItem="THI-Mu-252" secondAttribute="centerX" id="QLC-f7-sAy"/>
+                            <constraint firstItem="xBc-mx-Isf" firstAttribute="centerY" secondItem="THI-Mu-252" secondAttribute="centerY" id="VsH-0n-Qua"/>
+                            <constraint firstItem="VMH-gf-7Kg" firstAttribute="trailing" secondItem="xBc-mx-Isf" secondAttribute="trailing" id="Zwf-yx-Fib"/>
+                            <constraint firstItem="xBc-mx-Isf" firstAttribute="leading" secondItem="VMH-gf-7Kg" secondAttribute="leading" id="lr0-si-KB4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VMH-gf-7Kg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="BFb-9g-IML"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="indicatorContainerView" destination="xBc-mx-Isf" id="sXR-Je-ksq"/>
+                        <outlet property="indicatorView" destination="Kim-p5-Yst" id="S9r-Mv-LxU"/>
+                        <outlet property="myTableView" destination="mJW-4F-n5q" id="6xA-Y2-rwS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GWz-Xj-sKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-485" y="-184"/>
+        </scene>
+    </scenes>
+</document>
