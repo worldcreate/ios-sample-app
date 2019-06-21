@@ -30,6 +30,13 @@
 		05EDA7D922BD121E00C412AE /* Sub1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7D822BD121E00C412AE /* Sub1Presenter.swift */; };
 		05EDA7DB22BD129B00C412AE /* QiitaPostsFetchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7DA22BD129B00C412AE /* QiitaPostsFetchPresenter.swift */; };
 		05EDA7DD22BD12E500C412AE /* QiitaPostsFetchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7DC22BD12E500C412AE /* QiitaPostsFetchInteractor.swift */; };
+		05EDA7E522BD1D1B00C412AE /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7E422BD1D1B00C412AE /* HelloWorldTests.swift */; };
+		05EDA7EC22BD1D5300C412AE /* QiitaPostsFetchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7DC22BD12E500C412AE /* QiitaPostsFetchInteractor.swift */; };
+		05EDA7EE22BD1DA400C412AE /* QiitaPostsFetchInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7ED22BD1DA400C412AE /* QiitaPostsFetchInteractorTests.swift */; };
+		05EDA7EF22BD1DD000C412AE /* QiitaPostsFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7D422BD10CB00C412AE /* QiitaPostsFetchUseCase.swift */; };
+		05EDA7F022BD1DD500C412AE /* QiitaPostsFetchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7DA22BD129B00C412AE /* QiitaPostsFetchPresenter.swift */; };
+		05EDA7F122BD1DD900C412AE /* SampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7D622BD11B600C412AE /* SampleRepository.swift */; };
+		05EDA7F222BD1DDD00C412AE /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EDA7BD22BCEB3A00C412AE /* Posts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 05EDA7C322BCEB5800C412AE;
 			remoteInfo = Service;
+		};
+		05EDA7E722BD1D1B00C412AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05A1768D2269D7E500672E24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05A176942269D7E500672E24;
+			remoteInfo = HelloWorld;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -91,6 +105,10 @@
 		05EDA7D822BD121E00C412AE /* Sub1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sub1Presenter.swift; sourceTree = "<group>"; };
 		05EDA7DA22BD129B00C412AE /* QiitaPostsFetchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPostsFetchPresenter.swift; sourceTree = "<group>"; };
 		05EDA7DC22BD12E500C412AE /* QiitaPostsFetchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPostsFetchInteractor.swift; sourceTree = "<group>"; };
+		05EDA7E222BD1D1B00C412AE /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05EDA7E422BD1D1B00C412AE /* HelloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldTests.swift; sourceTree = "<group>"; };
+		05EDA7E622BD1D1B00C412AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05EDA7ED22BD1DA400C412AE /* QiitaPostsFetchInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaPostsFetchInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +135,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05EDA7DF22BD1D1B00C412AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,6 +151,7 @@
 				05A176972269D7E500672E24 /* HelloWorld */,
 				05EDA7B122BCEAF400C412AE /* Domain */,
 				05EDA7C522BCEB5800C412AE /* Service */,
+				05EDA7E322BD1D1B00C412AE /* HelloWorldTests */,
 				05A176962269D7E500672E24 /* Products */,
 				05CF581822A8DD7000099CDD /* Frameworks */,
 			);
@@ -137,6 +163,7 @@
 				05A176952269D7E500672E24 /* HelloWorld.app */,
 				05EDA7B022BCEAF400C412AE /* Domain.framework */,
 				05EDA7C422BCEB5800C412AE /* Service.framework */,
+				05EDA7E222BD1D1B00C412AE /* HelloWorldTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,6 +217,16 @@
 				05EDA7D222BCEEAF00C412AE /* SampleService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		05EDA7E322BD1D1B00C412AE /* HelloWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				05EDA7E422BD1D1B00C412AE /* HelloWorldTests.swift */,
+				05EDA7E622BD1D1B00C412AE /* Info.plist */,
+				05EDA7ED22BD1DA400C412AE /* QiitaPostsFetchInteractorTests.swift */,
+			);
+			path = HelloWorldTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,13 +307,31 @@
 			productReference = 05EDA7C422BCEB5800C412AE /* Service.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		05EDA7E122BD1D1B00C412AE /* HelloWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05EDA7E922BD1D1B00C412AE /* Build configuration list for PBXNativeTarget "HelloWorldTests" */;
+			buildPhases = (
+				05EDA7DE22BD1D1B00C412AE /* Sources */,
+				05EDA7DF22BD1D1B00C412AE /* Frameworks */,
+				05EDA7E022BD1D1B00C412AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05EDA7E822BD1D1B00C412AE /* PBXTargetDependency */,
+			);
+			name = HelloWorldTests;
+			productName = HelloWorldTests;
+			productReference = 05EDA7E222BD1D1B00C412AE /* HelloWorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		05A1768D2269D7E500672E24 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = zyyx;
 				TargetAttributes = {
@@ -290,6 +345,10 @@
 					05EDA7C322BCEB5800C412AE = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
+					};
+					05EDA7E122BD1D1B00C412AE = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 05A176942269D7E500672E24;
 					};
 				};
 			};
@@ -309,6 +368,7 @@
 				05A176942269D7E500672E24 /* HelloWorld */,
 				05EDA7AF22BCEAF400C412AE /* Domain */,
 				05EDA7C322BCEB5800C412AE /* Service */,
+				05EDA7E122BD1D1B00C412AE /* HelloWorldTests */,
 			);
 		};
 /* End PBXProject section */
@@ -334,6 +394,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		05EDA7C222BCEB5800C412AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05EDA7E022BD1D1B00C412AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,6 +443,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05EDA7DE22BD1D1B00C412AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EDA7EC22BD1D5300C412AE /* QiitaPostsFetchInteractor.swift in Sources */,
+				05EDA7F222BD1DDD00C412AE /* Posts.swift in Sources */,
+				05EDA7F122BD1DD900C412AE /* SampleRepository.swift in Sources */,
+				05EDA7F022BD1DD500C412AE /* QiitaPostsFetchPresenter.swift in Sources */,
+				05EDA7E522BD1D1B00C412AE /* HelloWorldTests.swift in Sources */,
+				05EDA7EE22BD1DA400C412AE /* QiitaPostsFetchInteractorTests.swift in Sources */,
+				05EDA7EF22BD1DD000C412AE /* QiitaPostsFetchUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -388,6 +469,11 @@
 			isa = PBXTargetDependency;
 			target = 05EDA7C322BCEB5800C412AE /* Service */;
 			targetProxy = 05EDA7C922BCEB5800C412AE /* PBXContainerItemProxy */;
+		};
+		05EDA7E822BD1D1B00C412AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05A176942269D7E500672E24 /* HelloWorld */;
+			targetProxy = 05EDA7E722BD1D1B00C412AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -683,6 +769,46 @@
 			};
 			name = Release;
 		};
+		05EDA7EA22BD1D1B00C412AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				INFOPLIST_FILE = HelloWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.HelloWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorld.app/HelloWorld";
+			};
+			name = Debug;
+		};
+		05EDA7EB22BD1D1B00C412AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				INFOPLIST_FILE = HelloWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.HelloWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorld.app/HelloWorld";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -718,6 +844,15 @@
 			buildConfigurations = (
 				05EDA7CE22BCEB5800C412AE /* Debug */,
 				05EDA7CF22BCEB5800C412AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05EDA7E922BD1D1B00C412AE /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EDA7EA22BD1D1B00C412AE /* Debug */,
+				05EDA7EB22BD1D1B00C412AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
